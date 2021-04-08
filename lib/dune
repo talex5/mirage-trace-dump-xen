@@ -1,0 +1,5 @@
+(executable
+  (name main)
+  (public_name mirage-trace-dump-xen)
+  (package mirage-trace-dump-xen)
+  (libraries cmdliner xen-gnt xen-gnt-unix xenstore.client xenstore.unix xenstore_transport.unix str))

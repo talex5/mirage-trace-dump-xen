@@ -1,0 +1,17 @@
+(lang dune 2.8)
+(name mirage-trace-dump-xen)
+(formatting disabled)
+(generate_opam_files true)
+(source (github talex5/mirage-trace-dump-xen))
+(authors "talex5@gmail.com")
+(maintainers "talex5@gmail.com")
+(documentation "https://talex5.github.io/mirage-trace-dump-xen/")
+(package
+ (name mirage-trace-dump-xen)
+ (synopsis "Dump a CTF trace from a running mirage-xen unikernel")
+ (depends
+  (cmdliner (>= 1.0.4))
+  (xenstore_transport (>= 1.3.0))
+  (xenstore (>= 2.1.1))
+  (xen-gnt-unix (>= 4.0.0))
+  (xen-gnt (>= 4.0.0))))
